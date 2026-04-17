@@ -24,19 +24,46 @@
 
 #     print(f"{i+1} Hola Camello")
 
-nombre=input("Ingrese su nombre: ")
+# nombre=input("Ingrese su nombre: ")
+# vocales=0
+# cons=0
+# for i in nombre:
+#     print(i)
+#     # vocales=vocales+1
+#     if i in "aeiou":
+#         vocales+=1
+#     elif i==" ":
+#         print()
+#     else:
+#         cons+=1
+# print(f"La cant de vocales es {vocales}")
+# print(f"La cant de consonantes es {cons}")
+
+
+
+# print("ingrese su nombre")
+# name=input()
+# vocales=0
+
+# for i in name:
+#     print(i)
+#     if i in "aeiouAEIOU":
+#         vocales+=1
+# print(f"La cantidad de vocales es {vocales}")
+
+
+
+print("ingrese su nombre")
+name=input()
 vocales=0
-cons=0
-for i in nombre:
+consonantes=0
+for i in name:
     print(i)
-    # vocales=vocales+1
-    if i in "aeiou":
+    if i in "aeiouAEIOU":
         vocales+=1
     elif i==" ":
         print()
     else:
-        cons+=1
-print(f"La cant de vocales es {vocales}")
-print(f"La cant de consonantes es {cons}")
-
-
+        consonantes+=1
+print(f"La cantidad de vocales es {vocales}")
+print(f"La cantidad de consonantes es {consonantes}")
