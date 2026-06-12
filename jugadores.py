@@ -1,4 +1,4 @@
-pelicula={
+{jugadores=
    1:{"nombre": "Maracuyá", "precio": 3000},
    2:{"nombre": "Pera", "precio": 1500},
    3:{"nombre": "Cebolla", "precio": 1200}
