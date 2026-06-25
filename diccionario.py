@@ -209,49 +209,49 @@
 # Ademas, crear un CRUD pero con la lista 
 # de diccionarios
 
-agregarpacientes=()
-mostarpacientes=()
-pacientes=()
+# agregarpacientes=()
+# mostarpacientes=()
+# pacientes=()
 
-def validtemp(t):
-    if t>39:
-        return True
-    else:
-        return False
-pacientes.append({"nombre": "alan brito", "prevision": "isapre", "temperatura": 39.5, "grave": True})
-def agregarusuario():
-   nombre=input("ingrese el nombre del paciente nuevo: ")
-   while nombre=="" or len(nombre)<9:
-      print("nombre no puede ser vacion  ni tener menos de 8 caracter. ")
-      nombre=input("ingrese el nombre del paciente nuevo: ")
-   prevision=input("ingrese la prevision del paciente nuevo (fonasa, isapre, fodesa): ")
-   while prevision.lower() not in 
-   temperatura=float(input("ingrese la temperatura del paciente nuevo: "))
-   pacientes.append({"nombre": nombre, "prevision": prevision, "temperatura": temperatura, "grave": validtemp(temperatura)})
-   print(pacientes)
+# def validtemp(t)
+#     if t>39:
+#         return True
+#     else:
+#         return False
+# pacientes.append({"nombre": "alan brito", "prevision": "isapre", "temperatura": 39.5, "grave": True})
+# def agregarusuario():
+#    nombre=input("ingrese el nombre del paciente nuevo: ")
+#    while nombre=="" or len(nombre)<9:
+#       print("nombre no puede ser vacion  ni tener menos de 8 caracter. ")
+#       nombre=input("ingrese el nombre del paciente nuevo: ")
+#    prevision=input("ingrese la prevision del paciente nuevo (fonasa, isapre, fodesa): ")
+#    while prevision.lower() not in 
+#    temperatura=float(input("ingrese la temperatura del paciente nuevo: "))
+#    pacientes.append({"nombre": nombre, "prevision": prevision, "temperatura": temperatura, "grave": validtemp(temperatura)})
+#    print(pacientes)
 
-   while True:
-      try:
-         print("1.- agregar pacientes ")
-         print("2.- quitar pacientes ")
-         print("3.- tomar temperatura ")
-         print("4.- cobrar a pacientes ")
-         print("5.- mostrar pacientes ")
-         print("9.- salir")
-         op=int(input("Seleccione una opcion: "))
-         match op:
-            case 1:
-               agregarpacientes()
-            case 2:
-               mostarpacientes()
-               eliminar=int(input("que pacientes desea eliminar?: "))
-               pacientes.pop(eliminar-1)
-            case 3:
-                 print("")
-            case 4:
-                 msotrarpacientes()
-                 cobrar=int(input("a quien la va a cobrar?: "))
-                 if pacientes[cobrar-1]["prevision"]
+#    while True:
+#       try:
+#          print("1.- agregar pacientes ")
+#          print("2.- quitar pacientes ")
+#          print("3.- tomar temperatura ")
+#          print("4.- cobrar a pacientes ")
+#          print("5.- mostrar pacientes ")
+#          print("9.- salir")
+#          op=int(input("Seleccione una opcion: "))
+#          match op:
+#             case 1:
+#                agregarpacientes()
+#             case 2:
+#                mostarpacientes()
+#                eliminar=int(input("que pacientes desea eliminar?: "))
+#                pacientes.pop(eliminar-1)
+#             case 3:
+#                  print("")
+#             case 4:
+#                  msotrarpacientes()
+#                  cobrar=int(input("a quien la va a cobrar?: "))
+#                  if pacientes[cobrar-1]["prevision"]
 
                
          
@@ -259,90 +259,90 @@ def agregarusuario():
          
          
 
-      except Exception as e:
-         print("Error:", e)
+#       except Exception as e:
+#          print("Error:", e)
    
 
 
 
 
-pacientes.append({"nombre": "Alan Brito", "prevision": "Isapre", 
-   "temperatura":39.6, "grave": True})
+# pacientes.append({"nombre": "Alan Brito", "prevision": "Isapre", 
+#    "temperatura":39.6, "grave": True})
 
 
 
-def validarEstado(tempe):
-   if tempe>39:
-       return True 
-   else:
-       return False
-def mostrarPacientes():
-    if len(pacientes)==0:
-        print("No hay pacientes")
-    else:
-        c=1
-        for p in pacientes:
-            print(f"{c} .- {p}")
-            c+=1
-def agregarPaciente():
-    nombre=input("Ingrese nombre: ")
-    prevision=input("Ingrese prevision: ")
-    temp=float(input("Ingrese temp: "))
-    pacientes.append({"nombre": nombre, "prevision": prevision, 
-                "temperatura":temp, "grave": validarEstado(temp)})
-    print("Paciente agregado al listado")
-def eliminarPaciente():
-    mostrarPacientes()
-    paci=int(input("Que paciente se vá?: "))
-    pacientes.pop(paci-1)
-    print("Paciente eliminado.")
-def tomarTemp():
-    mostrarPacientes()
-    paciente=int(input ("A que paciente le tomamos temperatura?: "))
-    tomarTemp=float(input("ingrese su temperatura: "))
-    pacientes[paciente-1]["temperatura"]=tomarTemp
-    pacientes[paciente-1]["grave"]=validarEstado(tomarTemp)
-def cobrarAtencion():
-    mostrarPacientes()
-    pa=int(input("¿que paciente va a pagar?: "))
-    if -1<cobrar<len(pacientes):
-        print("paciente no enontrado")
+# def validarEstado(tempe):
+#    if tempe>39:
+#        return True 
+#    else:
+#        return False
+# def mostrarPacientes():
+#     if len(pacientes)==0:
+#         print("No hay pacientes")
+#     else:
+#         c=1
+#         for p in pacientes:
+#             print(f"{c} .- {p}")
+#             c+=1
+# def agregarPaciente():
+#     nombre=input("Ingrese nombre: ")
+#     prevision=input("Ingrese prevision: ")
+#     temp=float(input("Ingrese temp: "))
+#     pacientes.append({"nombre": nombre, "prevision": prevision, 
+#                 "temperatura":temp, "grave": validarEstado(temp)})
+#     print("Paciente agregado al listado")
+# def eliminarPaciente():
+#     mostrarPacientes()
+#     paci=int(input("Que paciente se vá?: "))
+#     pacientes.pop(paci-1)
+#     print("Paciente eliminado.")
+# def tomarTemp():
+#     mostrarPacientes()
+#     paciente=int(input ("A que paciente le tomamos temperatura?: "))
+#     tomarTemp=float(input("ingrese su temperatura: "))
+#     pacientes[paciente-1]["temperatura"]=tomarTemp
+#     pacientes[paciente-1]["grave"]=validarEstado(tomarTemp)
+# def cobrarAtencion():
+#     mostrarPacientes()
+#     pa=int(input("¿que paciente va a pagar?: "))
+#     if -1<cobrar<len(pacientes):
+#         print("paciente no enontrado")
 
 
       
-    if pacientes[pa-1]["prevision"].lower()=="fonasa":
-        pagar=25000*0.46
-    elif pacientes[pa-1]["prevision"].lower()=="isapre":
-        pagar=25000*0.73
-    elif pacientes[pa-1]["prevision"].lower()=="fodesa":
-        pagar=25000*0.875
-    else:
-        print("prevision incorrecta")
-    print("Su total a pagar es: ", pagar)
-while True:
-    try:
-        print("1.- Ingresar paciente")
-        print("2.- Quitar paciente")
-        print("3.- Tomar Temperatura")
-        print("4.- Cobra atencion")
-        print("5.- Mostrar Pacientes")
-        print("9.- Salir")
-        op=int(input("Ingrese una opcion: "))
-        match op:
-            case 1:
-                agregarPaciente()
-            case 2:
-                eliminarPaciente()
-            case 3:
-                tomarTemp()
-            case 4:
-                cobrarAtencion()
-            case 5:
-                mostrarPacientes()
-            case 9:
-                print("Saliendo")
-                break
-            case _:
-                print("Opción inválida")
-    except Exception as e:
-        print("Error:" , e)
+#     if pacientes[pa-1]["prevision"].lower()=="fonasa":
+#         pagar=25000*0.46
+#     elif pacientes[pa-1]["prevision"].lower()=="isapre":
+#         pagar=25000*0.73
+#     elif pacientes[pa-1]["prevision"].lower()=="fodesa":
+#         pagar=25000*0.875
+#     else:
+#         print("prevision incorrecta")
+#     print("Su total a pagar es: ", pagar)
+# while True:
+#     try:
+#         print("1.- Ingresar paciente")
+#         print("2.- Quitar paciente")
+#         print("3.- Tomar Temperatura")
+#         print("4.- Cobra atencion")
+#         print("5.- Mostrar Pacientes")
+#         print("9.- Salir")
+#         op=int(input("Ingrese una opcion: "))
+#         match op:
+#             case 1:
+#                 agregarPaciente()
+#             case 2:
+#                 eliminarPaciente()
+#             case 3:
+#                 tomarTemp()
+#             case 4:
+#                 cobrarAtencion()
+#             case 5:
+#                 mostrarPacientes()
+#             case 9:
+#                 print("Saliendo")
+#                 break
+#             case _:
+#                 print("Opción inválida")
+#     except Exception as e:
+#         print("Error:" , e)
